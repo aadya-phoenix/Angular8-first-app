@@ -1,0 +1,12 @@
+<h1>this is angular html file</h1>
+<h2 [class]="cssClass">{{msg|uppercase}}</h2>
+<h3 [class]="cssClass" [innerText]="msg" ></h3>
+<h2 [hidden]="isHide">This is property binding</h2>
+
+<button (click)="showHide()">Show Hide</button>
+
+<h3 class='orange'>property binding with css</h3>
+
+<h3 [innerText]='"this is plain text"' ></h3>
+
+<input type="text" (input)=takeInput($event) placeholder="type name">
